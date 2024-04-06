@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link href="include.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>VINU<span>RAM</span></h1>
+        <nav id="menu">
+            <a href="">HOME</a>
+            <a href="">ABOUT ME</a>
+            <a href="">SKILLS</a>
+            <a href="">PROJECTS</a>
+            <a href="">CONTACT ME</a>
+        </nav>
+        <img id="unix" src="list_2099125.png" alt="menu">
+    </div>
+    <div class="pass">
+        <p>Hi,<br>I am <span>Vinod Gowda</span><br>Full Stack Developer</p>
+        <button class="D">Download CV</button>
+        <img src="ram-removebg-preview.png" alt="vinu">
+       
+    </div></body> 
+    <script>
+        const menu=document.getElementById("menu");
+        const unix=document.getElementById("unix");
+        unix.addEventListener("click", ()=>{
+            unix.classList.toggle("active");
+            menu.classList.toggle("active");
+        })
+    </script>
+</html>

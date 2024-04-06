@@ -1,0 +1,116 @@
+nav{
+    margin-left: 900px;
+    margin-top: -60px;
+    gap: 15px;
+    display: flex;
+    padding: 12px 0;
+}
+nav a{
+    text-decoration: none;
+    font-size: 17px;
+    color: blue;
+}
+nav a:hover{
+    border: 1px solid black;
+    background-color: black;
+    color:whitesmoke;
+    border-radius: 5px;
+    
+}
+#unix{
+    width: 40px;
+    height: 40px;
+    margin-left: 1400px;
+    margin-top: -50px;
+    display: none;
+}
+h1{
+    margin-left: 20px;
+    color: rgba(36, 15, 94, 0.9);
+    margin-top: 25px;
+    padding-top: 12px;
+}
+h1 span{
+    color: rgba(49, 54, 194, 0.9);
+}
+.container{
+    border-bottom: 5px solid rgba(209, 199, 237, 0.9);
+    background-color: rgba(209, 199, 237, 0.9);
+    border-radius: 10px;
+    margin-top: -20px;
+}
+.pass p{
+    margin-left: 200px;
+    margin-top: 300px;
+    font-size: 40px;
+    font-weight: bold;
+}
+p span{
+    font-size: 45px;
+    color: gold;
+}
+.pass img{
+    width: 350px;
+    height: 430px;
+    margin-left: 900px;
+    margin-top: -350px;
+    border-radius: 30px;
+}
+.pass img:hover{
+    box-shadow: 10px 10px 20px black;
+}
+.D{
+    border: none;
+    outline: none;
+    background-color:rgb(18, 69, 240);
+    border-radius: 5px;
+    cursor: pointer;
+    height: 25px;
+    margin-left: 350px;
+    margin-top: -50px;
+    color: white;
+}
+@media(max-width:600px){
+    #unix{
+        display: block;
+        margin-left: 290px;
+        margin-top: 12px;
+    }
+    nav{
+        position: absolute;
+        left: -265%;
+        top:22%;
+        flex-direction: column;
+        text-align: center;
+        background-color: darksalmon;
+        width: 400px;
+        transition: all .5s;
+        margin-left: 0px;
+    }  
+    nav.active{
+        left: 0;
+    }
+    .pass img{
+        margin-left: 25px;
+        width: 300px;
+        height: 350px;
+        margin-top: 20px;
+    }
+    .pass img:hover{
+        box-shadow: 10px 10px 20px black;
+    }
+    .pass p{
+        margin-left: 10px;
+        text-align: center;
+        margin-top: 30px
+    }
+    .D{
+        margin-left: 130px;
+    }
+    h1{
+        display: none;
+    }
+    .container{
+        margin-top: 20px;
+    }
+}
